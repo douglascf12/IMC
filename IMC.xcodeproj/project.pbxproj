@@ -15,6 +15,9 @@
 		A3AE8A4C2B8948F70060FB21 /* IMCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A4B2B8948F70060FB21 /* IMCTests.swift */; };
 		A3AE8A562B8948F70060FB21 /* IMCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A552B8948F70060FB21 /* IMCUITests.swift */; };
 		A3AE8A582B8948F70060FB21 /* IMCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A572B8948F70060FB21 /* IMCUITestsLaunchTests.swift */; };
+		A3AE8A802B8A300A0060FB21 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A7F2B8A300A0060FB21 /* Presenter.swift */; };
+		A3AE8A822B8A30200060FB21 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A812B8A30200060FB21 /* Interactor.swift */; };
+		A3AE8A842B8A302E0060FB21 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A832B8A302E0060FB21 /* Factory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A3AE8A512B8948F70060FB21 /* IMCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AE8A552B8948F70060FB21 /* IMCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCUITests.swift; sourceTree = "<group>"; };
 		A3AE8A572B8948F70060FB21 /* IMCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3AE8A7F2B8A300A0060FB21 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A3AE8A812B8A30200060FB21 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		A3AE8A832B8A302E0060FB21 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,9 @@
 		A3AE8A332B8948F20060FB21 /* IMC */ = {
 			isa = PBXGroup;
 			children = (
+				A3AE8A7E2B8A2FE30060FB21 /* Scene */,
 				A3AE8A342B8948F20060FB21 /* AppDelegate.swift */,
 				A3AE8A362B8948F20060FB21 /* SceneDelegate.swift */,
-				A3AE8A382B8948F20060FB21 /* ViewController.swift */,
 				A3AE8A3D2B8948F70060FB21 /* Assets.xcassets */,
 				A3AE8A3F2B8948F70060FB21 /* LaunchScreen.storyboard */,
 				A3AE8A422B8948F70060FB21 /* Info.plist */,
@@ -122,6 +128,17 @@
 				A3AE8A572B8948F70060FB21 /* IMCUITestsLaunchTests.swift */,
 			);
 			path = IMCUITests;
+			sourceTree = "<group>";
+		};
+		A3AE8A7E2B8A2FE30060FB21 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A3AE8A382B8948F20060FB21 /* ViewController.swift */,
+				A3AE8A7F2B8A300A0060FB21 /* Presenter.swift */,
+				A3AE8A812B8A30200060FB21 /* Interactor.swift */,
+				A3AE8A832B8A302E0060FB21 /* Factory.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +273,9 @@
 			files = (
 				A3AE8A392B8948F20060FB21 /* ViewController.swift in Sources */,
 				A3AE8A352B8948F20060FB21 /* AppDelegate.swift in Sources */,
+				A3AE8A842B8A302E0060FB21 /* Factory.swift in Sources */,
+				A3AE8A822B8A30200060FB21 /* Interactor.swift in Sources */,
+				A3AE8A802B8A300A0060FB21 /* Presenter.swift in Sources */,
 				A3AE8A372B8948F20060FB21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
