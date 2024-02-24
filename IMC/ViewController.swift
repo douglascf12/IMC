@@ -1,19 +1,13 @@
-//
-//  ViewController.swift
-//  IMC
-//
-//  Created by Douglas Cardoso on 23/02/24.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    override func loadView() {
+        let view = UIView(frame: UIScreen.main.bounds)
+        view.backgroundColor = .green
+        self.view = view
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
