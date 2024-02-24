@@ -17,9 +17,7 @@ class ViewController: UIViewController {
     }
     
     override func loadView() {
-        let view = UIView(frame: UIScreen.main.bounds)
-        view.backgroundColor = .green
-        self.view = view
+        self.view = View()
     }
     
     override func viewDidLoad() {
