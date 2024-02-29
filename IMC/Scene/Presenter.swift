@@ -1,5 +1,5 @@
 protocol Presenting {
-    // todo
+    func displayResult(result: String, image: String)
 }
 
 final class Presenter {
@@ -8,5 +8,7 @@ final class Presenter {
 
 // MARK: - Presenting
 extension Presenter: Presenting {
-    // todo
+    func displayResult(result: String, image: String) {
+        viewController?.showResult(result: result, image: image)
+    }
 }

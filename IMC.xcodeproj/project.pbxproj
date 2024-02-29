@@ -19,6 +19,7 @@
 		A3AE8A822B8A30200060FB21 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A812B8A30200060FB21 /* Interactor.swift */; };
 		A3AE8A842B8A302E0060FB21 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A832B8A302E0060FB21 /* Factory.swift */; };
 		A3AE8A892B8A35B90060FB21 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A882B8A35B90060FB21 /* View.swift */; };
+		A3AE8A8C2B8A37760060FB21 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE8A8B2B8A37760060FB21 /* ViewCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A3AE8A812B8A30200060FB21 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		A3AE8A832B8A302E0060FB21 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		A3AE8A882B8A35B90060FB21 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		A3AE8A8B2B8A37760060FB21 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		A3AE8A332B8948F20060FB21 /* IMC */ = {
 			isa = PBXGroup;
 			children = (
+				A3AE8A8A2B8A376A0060FB21 /* Helper */,
 				A3AE8A7E2B8A2FE30060FB21 /* Scene */,
 				A3AE8A342B8948F20060FB21 /* AppDelegate.swift */,
 				A3AE8A362B8948F20060FB21 /* SceneDelegate.swift */,
@@ -142,6 +145,14 @@
 				A3AE8A882B8A35B90060FB21 /* View.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		A3AE8A8A2B8A376A0060FB21 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A3AE8A8B2B8A37760060FB21 /* ViewCode.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 				A3AE8A822B8A30200060FB21 /* Interactor.swift in Sources */,
 				A3AE8A802B8A300A0060FB21 /* Presenter.swift in Sources */,
 				A3AE8A372B8948F20060FB21 /* SceneDelegate.swift in Sources */,
+				A3AE8A8C2B8A37760060FB21 /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
