@@ -1,7 +1,7 @@
 import UIKit
 
 protocol Displaying: AnyObject {
-    func showResult(result: String, image: String)
+    func showResult(message: String, image: UIImage?)
 }
 
 class ViewController: UIViewController {
@@ -41,7 +41,7 @@ extension ViewController: ViewDelegate {
 
 // MARK: - Displaying
 extension ViewController: Displaying {
-    func showResult(result: String, image: String) {
-        myView.setup(result: result, image: image)
+    func showResult(message: String, image: UIImage?) {
+        myView.setup(message: message, image: image)
     }
 }

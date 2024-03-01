@@ -14,18 +14,27 @@ final class Interactor {
 extension Interactor: Interacting {
     func calculate(weight: Double, height: Double) {
         let imc = weight / (height * height)
+        var typeWeight = String()
+        var imageName = String()
+        
         switch imc {
         case 0..<16:
-            presenter.displayResult(result: "\(Int(imc)): Magreza", image: "abaixo")
+            typeWeight = "Magreza"
+            imageName = "abaixo"
         case 16..<18.5:
-            presenter.displayResult(result: "\(Int(imc)): Abaixo do peso", image: "abaixo")
+            typeWeight = "Abaixo do peso"
+            imageName = "abaixo"
         case 18.5..<25:
-            presenter.displayResult(result: "\(Int(imc)): Peso ideal", image: "ideal")
+            typeWeight = "Peso ideal"
+            imageName = "ideal"
         case 25..<30:
-            presenter.displayResult(result: "\(Int(imc)): Sobrepeso", image: "sobre")
+            typeWeight = "Sobrepeso"
+            imageName = "sobre"
         default:
-            presenter.displayResult(result: "\(Int(imc)): Obesidade", image: "obesidade")
+            typeWeight = "Obesidade"
+            imageName = "obesidade"
         }
         
+        presenter.displayResult(imc: Int(imc), typeWeight: typeWeight, imageName: imageName)
     }
 }

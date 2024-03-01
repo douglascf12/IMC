@@ -1,5 +1,7 @@
+import UIKit
+
 protocol Presenting {
-    func displayResult(result: String, image: String)
+    func displayResult(imc: Int, typeWeight: String, imageName: String)
 }
 
 final class Presenter {
@@ -8,7 +10,9 @@ final class Presenter {
 
 // MARK: - Presenting
 extension Presenter: Presenting {
-    func displayResult(result: String, image: String) {
-        viewController?.showResult(result: result, image: image)
+    func displayResult(imc: Int, typeWeight: String, imageName: String) {
+        let message = "\(imc): \(typeWeight)"
+        let image = UIImage(named: imageName)
+        viewController?.showResult(message: message, image: image)
     }
 }

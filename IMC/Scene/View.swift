@@ -157,9 +157,9 @@ class View: UIView {
         delegate?.calculate(weight: weight, height: height)
     }
     
-    func setup(result: String, image: String) {
-        resultLabel.text = result
-        resultImageView.image = UIImage(named: image)
+    func setup(message: String, image: UIImage?) {
+        resultLabel.text = message
+        resultImageView.image = image
         resultView.isHidden = false
         resultImageView.isHidden = false
         endEditing(true)
@@ -229,7 +229,7 @@ extension View: ViewCode {
             resultImageView.topAnchor.constraint(equalTo: resultLabel.bottomAnchor, constant: 16),
             resultImageView.leadingAnchor.constraint(equalTo: resultView.leadingAnchor, constant: 16),
             resultImageView.trailingAnchor.constraint(equalTo: resultView.trailingAnchor, constant: -16),
-            resultImageView.bottomAnchor.constraint(equalTo: resultView.bottomAnchor, constant: -16)
+            resultImageView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -16)
         ])
     }
     
